@@ -1,0 +1,2 @@
+# finanzasapp
+para finanzas personales 
