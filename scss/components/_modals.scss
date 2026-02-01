@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+.recovery-modal {
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .modal-body p {
+    color: v.$color-text-muted;
+  }
+}

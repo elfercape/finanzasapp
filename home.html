@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartBudget - Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="page page--home">
+    <header class="app-header navbar navbar-light bg-white border-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="app-header__brand d-flex align-items-center">
+          <img src="imagenes/logo-nav.svg" alt="Logo SmartBudget" class="mr-2" />
+          <span class="font-weight-bold">SmartBudget</span>
+        </div>
+        <div class="app-header__user d-flex align-items-center">
+          <span class="app-header__user-name mr-3">Hola, Fernando</span>
+          <a href="login.html" class="app-header__logout text-danger">Cerrar sesión</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="app py-4">
+      <div class="container">
+        <ul class="nav nav-tabs app-tabs" id="homeTabs" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active app-tabs__tab"
+              id="billetera-tab"
+              data-toggle="tab"
+              href="#billetera"
+              role="tab"
+              aria-controls="billetera"
+              aria-selected="true"
+            >
+              Billetera
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link app-tabs__tab"
+              id="cuentas-tab"
+              data-toggle="tab"
+              href="#cuentas"
+              role="tab"
+              aria-controls="cuentas"
+              aria-selected="false"
+            >
+              Mis cuentas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link app-tabs__tab"
+              id="historial-tab"
+              data-toggle="tab"
+              href="#historial"
+              role="tab"
+              aria-controls="historial"
+              aria-selected="false"
+            >
+              Historial
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content pt-4" id="homeTabsContent">
+          <!-- Billetera -->
+          <div
+            class="tab-pane fade show active wallet"
+            id="billetera"
+            role="tabpanel"
+            aria-labelledby="billetera-tab"
+          >
+            <div class="card wallet__card">
+              <div class="card-body">
+                <div class="wallet__header mb-3">
+                  <h1 class="h5 mb-1">Saldo disponible</h1>
+                  <p class="wallet__balance h2 mb-1">$50.000</p>
+                  <p class="wallet__hint text-muted">
+                    Saldo inicial para comenzar a registrar pagos y movimientos.
+                  </p>
+                </div>
+
+                <div class="wallet__actions mb-3">
+                  <button class="btn btn-primary mr-2 wallet__button">Nuevo pago</button>
+                  <button class="btn btn-secondary wallet__button wallet__button--secondary">
+                    Transferir
+                  </button>
+                </div>
+
+                <div class="wallet__summary">
+                  <h2 class="h6 mb-2">Resumen rápido</h2>
+                  <ul class="wallet__list list-unstyled">
+                    <li class="wallet__item d-flex justify-content-between">
+                      <span>Gastos del mes</span>
+                      <span>$15.000</span>
+                    </li>
+                    <li class="wallet__item d-flex justify-content-between">
+                      <span>Ingresos del mes</span>
+                      <span>$20.000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mis cuentas -->
+          <div
+            class="tab-pane fade accounts"
+            id="cuentas"
+            role="tabpanel"
+            aria-labelledby="cuentas-tab"
+          >
+            <div class="card">
+              <div class="card-body">
+                <header class="accounts__header mb-3">
+                  <h1 class="h5 mb-1">Mis cuentas</h1>
+                  <p class="text-muted mb-0">Productos bancarios asociados a tu perfil.</p>
+                </header>
+
+                <div class="accounts__list row">
+                  <div class="col-md-6 mb-3">
+                    <article class="card account-card h-100">
+                      <div class="card-body">
+                        <h2 class="h6">Tarjeta de débito</h2>
+                        <p class="mb-1 text-muted">Banco Ejemplo</p>
+                        <p class="mb-0">Saldo: $30.000</p>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <article class="card account-card h-100">
+                      <div class="card-body">
+                        <h2 class="h6">Tarjeta de crédito</h2>
+                        <p class="mb-1 text-muted">Banco Ejemplo</p>
+                        <p class="mb-0">Cupo disponible: $120.000</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Historial -->
+          <div
+            class="tab-pane fade history"
+            id="historial"
+            role="tabpanel"
+            aria-labelledby="historial-tab"
+          >
+            <div class="card">
+              <div class="card-body">
+                <header class="history__header mb-3">
+                  <h1 class="h5 mb-1">Historial de movimientos</h1>
+                  <p class="text-muted mb-0">Pagos y transacciones realizadas.</p>
+                </header>
+
+                <div class="table-responsive">
+                  <table class="table table-sm history__table">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Categoría</th>
+                        <th class="text-right">Monto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01/01/2026</td>
+                        <td>Compra supermercado</td>
+                        <td>Alimentos</td>
+                        <td class="text-right text-danger">- $10.000</td>
+                      </tr>
+                      <tr>
+                        <td>02/01/2026</td>
+                        <td>Pago sueldo</td>
+                        <td>Ingresos</td>
+                        <td class="text-right text-success">+ $20.000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

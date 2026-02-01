@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-sm v.$space-lg;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: v.$color-primary;
+  color: #ffffff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+
+  &:hover {
+    background-color: v.$color-primary-dark;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--secondary {
+    background-color: #e5e7eb;
+    color: v.$color-text;
+  }
+}

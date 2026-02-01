@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartBudget - Billetera</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="page page--home">
+    <header class="app-header navbar navbar-light bg-white border-bottom">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="app-header__brand d-flex align-items-center">
+          <img src="imagenes/logo-nav.svg" alt="Logo SmartBudget" class="mr-2" />
+          <span class="font-weight-bold">SmartBudget</span>
+        </div>
+        <nav class="app-header__nav d-flex align-items-center">
+          <a href="home.html" class="mr-3">Home</a>
+          <a href="billetera.html" class="mr-3 font-weight-bold">Billetera</a>
+          <a href="mis-cuentas.html" class="mr-3">Mis cuentas</a>
+          <a href="historial.html" class="mr-3">Historial</a>
+          <a href="login.html" class="text-danger">Cerrar sesión</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="app py-4">
+      <div class="container">
+        <h1 class="h4 mb-3">Billetera</h1>
+
+        <div class="card wallet__card">
+          <div class="card-body">
+            <div class="wallet__header mb-3">
+              <h2 class="h5 mb-1">Saldo disponible</h2>
+              <p class="wallet__balance h2 mb-1">$50.000</p>
+              <p class="wallet__hint text-muted">
+                Saldo inicial para comenzar a registrar pagos y movimientos.
+              </p>
+            </div>
+
+            <div class="wallet__actions mb-3">
+              <button class="btn btn-primary mr-2 wallet__button">Nuevo pago</button>
+              <button class="btn btn-secondary wallet__button wallet__button--secondary">
+                Transferir
+              </button>
+            </div>
+
+            <div class="wallet__summary">
+              <h3 class="h6 mb-2">Resumen rápido</h3>
+              <ul class="wallet__list list-unstyled">
+                <li class="wallet__item d-flex justify-content-between">
+                  <span>Gastos del mes</span>
+                  <span>$15.000</span>
+                </li>
+                <li class="wallet__item d-flex justify-content-between">
+                  <span>Ingresos del mes</span>
+                  <span>$20.000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
