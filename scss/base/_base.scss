@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+body {
+  background-color: v.$color-background;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.page--login,
+.page--recovery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: v.$space-lg;
+}
+
+.page--home {
+  background-color: #f3f4f6;
+}

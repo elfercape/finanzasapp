@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as v;
+
+.footer {
+  padding: v.$space-md;
+  text-align: center;
+  font-size: 0.85rem;
+  color: v.$color-text-muted;
+}

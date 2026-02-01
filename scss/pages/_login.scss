@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+
+.login__card img {
+  width: 40px;
+  height: 40px;
+}
+
+.login__field label {
+  font-size: 0.9rem;
+  color: v.$color-text-muted;
+}
+
+.login__help a {
+  font-size: 0.85rem;
+  color: v.$color-primary;
+}

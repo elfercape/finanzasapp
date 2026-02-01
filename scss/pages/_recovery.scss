@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+.recovery__text {
+  font-size: 0.9rem;
+  color: v.$color-text-muted;
+}
+
+.recovery__back a {
+  font-size: 0.85rem;
+  color: v.$color-primary;
+}

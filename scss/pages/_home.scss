@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+
+.app-tabs__tab {
+  font-weight: 500;
+}
+
+.wallet__balance {
+  font-weight: 700;
+}
+
+.wallet__item {
+  font-size: 0.95rem;
+}
+
+.history__table td,
+.history__table th {
+  font-size: 0.9rem;
+}
