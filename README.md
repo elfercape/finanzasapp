@@ -291,10 +291,24 @@ Dejar una base sólida para futuras mejoras (más lógica de negocio, integraci�
 
 ## Captura: Login
 
+![Pantalla de login](imagenes/login.png)
+
 ## Captura: historial
+
+![Pantalla de historial](imagenes/historial.png)
 
 ## Captura: mis cuentas
 
+![Pantalla de mis cuentas](imagenes/mis%20cuentas.png)
+
 ## Captura: billetera
 
+![Pantalla de billetera](imagenes/billetera.png)
+
+## Captura: contraseña
+
+![Pantalla de contraseña](imagenes/login.png)
+
 ## Captura: cambio de contraseña
+
+![Pantalla de cambio de  contraseña](imagenes/cambio%20de%20contraseña.png)
