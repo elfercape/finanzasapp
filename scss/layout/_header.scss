@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+
+.app-header__brand img {
+  width: 32px;
+  height: 32px;
+}
+
+.app-header__user-name {
+  font-size: 0.9rem;
+  color: v.$color-text-muted;
+}
+
+.app-header__logout {
+  font-size: 0.9rem;
+}
